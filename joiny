@@ -1,0 +1,8 @@
+SELECT 
+    k.imie,
+    k.nazwisko,
+    z.data_zamowienia,
+    z.wartosc
+FROM klienci k
+JOIN zamowienia z ON k.id_klienta = z.id_klienta;
+
